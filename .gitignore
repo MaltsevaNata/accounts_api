@@ -2,3 +2,4 @@
 dockerfiles
 .env
 **/__pycache__/
+**/static/

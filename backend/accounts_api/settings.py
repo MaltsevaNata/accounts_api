@@ -81,7 +81,7 @@ DATABASES = {
 		'USER': os.getenv('POSTGRES_USER', 'postgres'),
 		'PASSWORD': os.getenv('POSTGRES_PASSWORD', '123456'),
 		'HOST': os.getenv('POSTGRES_HOST', 'localhost'),
-		'PORT': os.getenv('POSTGRES_PORT', '5438'),
+		'PORT': os.getenv('POSTGRES_PORT', '5432'),
 		'OPTIONS': {
 			'connect_timeout': os.getenv('SQL_CONN_TIMEOUT', 60)
 		}
@@ -124,6 +124,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/5.2/howto/static-files/
 
 STATIC_URL = 'static/'
+STATIC_ROOT = '/usr/app/accounts_api/static'
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field
