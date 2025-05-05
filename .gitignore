@@ -1,0 +1,4 @@
+.idea
+dockerfiles
+.env
+**/__pycache__/
