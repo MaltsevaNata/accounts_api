@@ -10,5 +10,4 @@ router.register(r'profiles', views.ProfileViewSet)
 urlpatterns = [
     path('admin/', admin.site.urls),
     re_path(r'^api/', include(router.urls)),
-    path('', include('django_prometheus.urls')),
 ]

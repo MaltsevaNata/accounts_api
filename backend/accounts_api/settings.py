@@ -23,7 +23,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-_4lm&v%m!0g)yv+&vq$ev61(q@y8v*t64w5f8iey&&tg%ccrpg'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = []
 
@@ -90,6 +90,8 @@ DATABASES = {
 		}
 	}
 }
+
+PROMETHEUS_METRICS_PORT = int(os.environ.get('PROMETHEUS_METRICS_PORT', 9091))
 
 
 # Password validation
