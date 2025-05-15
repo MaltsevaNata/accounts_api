@@ -5,9 +5,10 @@ from rest_framework.routers import DefaultRouter
 from accounts import views
 
 router = DefaultRouter()
-router.register(r'users', views.ProfileViewSet)
+router.register(r'profiles', views.ProfileViewSet)
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     re_path(r'^api/', include(router.urls)),
+    path('', include('django_prometheus.urls')),
 ]
