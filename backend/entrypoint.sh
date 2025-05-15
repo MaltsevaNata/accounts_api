@@ -10,6 +10,6 @@ echo "PostgreSQL started"
 
 python manage.py collectstatic --no-input
 python manage.py migrate
-python manage.py createsuperuser --noinput
+python manage.py createsuperuser --username test_user --email test_email@gmail.com --noinput
 
 exec "$@"

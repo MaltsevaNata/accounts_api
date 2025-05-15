@@ -1,7 +1,9 @@
 asgiref==3.8.1
 Django==5.2
+django-prometheus==2.3.1
 djangorestframework==3.16.0
 gunicorn==23.0.0
-prometheus-client==0.21.1
+packaging==25.0
+prometheus_client==0.21.1
 psycopg2-binary==2.9.10
 sqlparse==0.5.3
