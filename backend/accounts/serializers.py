@@ -12,8 +12,5 @@ class ProfileSerializer(serializers.ModelSerializer):
             'email',
             'first_name',
             'last_name',
-            'is_active',
-            'date_joined',
         ]
-        # Example: Make some fields read-only if needed
-        read_only_fields = ['id', 'date_joined']
+        read_only_fields = ['id']

@@ -23,7 +23,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-_4lm&v%m!0g)yv+&vq$ev61(q@y8v*t64w5f8iey&&tg%ccrpg'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = []
 
@@ -50,6 +50,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'accounts_api.prometheus_metrics.PrometheusMetricsCountMiddleware',
     'django_prometheus.middleware.PrometheusAfterMiddleware',
 ]
 
